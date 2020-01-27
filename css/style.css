@@ -247,6 +247,7 @@ details {
 	margin: 0 auto;
 	width: 85%;
 	height: 100%;
+	min-height: 202px;
 	max-height: 202px;
 	float: left;
 	display: block;
