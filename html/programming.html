@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta charset="UTF-8"/>
+		<title>programming</title>
+	</head>
+	<body>
+	
+			<div id="container">
+			
+				<canvas></canvas>
+				
+				<div class="header">
+					<div class="headerContainer">
+						<a id="moreinfo">Programming</a>
+					</div>
+					<div class="headerContainer">
+						<a id="eightball" href="../index.html">Grant Hitson</a>
+					</div>
+					<div class="headerContainer">
+						<a id="program" href="../html/3dart.html">Digital Art</a>
+					</div>
+				</div>
+
+				<div class="main">
+					<div id="fadein">
+
+						<div id="content">
+								
+								<div class="date">
+									<div id="8ball" class = "title">
+										<h2>AteBallPool Bot</h2>
+										<p>Python<br>C++<br>Open CV2<br>Pycharm<br>Object Oriented<br></p>
+									</div>
+									
+									<div class = "info">
+										<a href="https://github.com/granthitson/AteBallPool">github</a>
+										<p>The AteBallPool Bot is a WIP Python bot designed to automatically
+										play 8 ball pool on miniclip.com. The bot utilizes PyAutoGui, a python
+										module designed to control the mouse and keyboard, and OpenCV2, a 
+										python module that contains a library of computer vision strategies.
+										<br><br>
+										The bot was written in Python initially, and is being ported to C++.</p>
+									
+										<img src="../imgs/poolball/pooltable1.png" alt="outlined">
+										<br>
+										<p>The bot works in multiple different stages: menu navigation/pre-game setup
+										and game navigation.
+										<br><br>
+										The pre-game setup involves logging into miniclip.com, redeeming various daily
+										rewards, and setting up games with random players or friends. My intentions 
+										were never to game the system or really reap any benefits, other than the
+										satisfaction of creating a bot that works. Thus, the final product will only 
+										set up games against friends or in the games 'practice' mode.
+										<br><br>
+										The game setup contains most of the guts of the bot. Once a game starts, the bot
+										operates on information acquired at the beginning of the round (a screen shot is
+										taken). Each of the 6 pockets are marked, the designated suit (or lack of a suit)
+										 is assigned, and then the pool balls are outlined.
+										 <br><br>
+										The process of outlining the pool balls relies on a variety of different color 
+										detection and hough circle detection techniques. These techniques are used to 
+										differentiate between solid and stripes, as well as find an accurate center point.
+										</p>
+										<img src="../imgs/poolball/pooltable1.png" alt="outlined">
+										<p>
+										Once each pool ball is outlined, the next major step is to figure out a viable target.
+										Various different paths from each ball to eligible holes are examined, and if a viable
+										path is discovered, the path from the cue ball to the point the ball needs to be hit at
+										is checked. If both paths are determined to be clear, the bot calculates the power 
+										needed to hit the ball in and then hits the ball.
+										</p>
+										<img src="../imgs/poolball/pooltable1hit.png" alt="hitpoolball">
+									</div>	
+
+								</div>
+								  
+								<div class="date">
+									<div id="cookingsim" class = "title">
+										<h2>Cooking Simulator</h2>
+										<p>C#<br>Unity<br>Visual Studio<br></p>
+									</div>
+									<div class = "info">
+										<a href="https://github.com/granthitson/VRCookingGame">github</a>
+										<video controls>
+											<source src="../video/cookingsimulatorvideo.mp4" type="video/mp4">
+										</video>
+									
+									</div>
+								 
+								</div>
+								
+								<div class="date">
+									<div id="walkingdead" class = "title">
+										<h2>UNC Walking Dead</h2>
+										<p>C#<br>Unity<br>Visual Studio<br></p>
+									</div>
+									
+									<div class = "info">
+										<div>
+											<a href="https://github.com/granthitson/UNC-Walking-Dead">github</a>
+										</div>
+										<img src="C:/Users/Grant/AppData/Local/Programs/Python/Projects/games/game780/outlined/pooltable1.png" alt="outlined">
+									
+									</div>
+								 
+								</div>
+								
+								<div class="date">
+									<div id="doodle" class = "title">
+										<h2>Doodle Board</h2>
+										<p>Java<br>Eclipse<br>Object Oriented<br></p>
+									</div>
+									
+									<div class = "info">
+										<a href="https://github.com/granthitson/doodleboard">github</a>
+										<img src="C:/Users/Grant/AppData/Local/Programs/Python/Projects/games/game780/outlined/pooltable1.png" alt="outlined">
+									
+									</div>
+								 
+								</div>
+								
+							<script src="../js/project.js"></script>												
+							<script src="../js/8ball.js"></script>												
+							<script src="../js/doodle.js"></script>												
+							<script src="../js/walkingdead.js"></script>												
+							<script src="../js/cookingsim.js"></script>												
+						</div>
+							
+					
+					</div>
+					
+				</div>
+				
+				<p id="gkh"> Grant Hitson - Jan 2020 </p>
+						
+			</div>
+				
+		
+	</body>
+</html>
