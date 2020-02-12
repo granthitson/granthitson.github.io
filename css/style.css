@@ -137,7 +137,6 @@ details {
 	position: relative;
 	margin: 45px;
 	margin-bottom: 20px;
-	min-height: 715px;
 	background: rgba(0,0,0,.5);
 	border: solid white;
 	max-width: 1000px;
@@ -214,7 +213,27 @@ details {
 	margin-bottom: 10px;
 }
 
+#break {
+	margin: 10px auto;
+	width: 100%;
+	max-height: 100%;
+	float: right;
+	display: block;
+	position: relative;
+	box-sizing: border-box;  
+	border-bottom: 1px solid white;
+}
 
+pre {
+	position: relative;
+	font-family: Ubuntu,Arial,sans-serif;
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	margin: 0 auto;
+	padding: 5px;
+	float: left;
+}
 
 .title h2,p {
 	margin: 0;
@@ -243,12 +262,51 @@ details {
 	cursor: pointer;
 }
 
+.title1 {
+	margin: 0 auto;
+	width: 15%;
+	max-height: 202px;
+	float: right;
+	display: block;
+	position: relative;
+	box-sizing: border-box; 
+	border: white 1px solid;
+	border-left: white 0px;
+	background: rgba(0,0,0,.2);
+	outline: none;
+}
+
+.title1 h2,p {
+	margin: 0;
+	width: 100%;
+	display: block;
+	position: relative;
+	text-align: right;
+	box-sizing: border-box; 
+	font-size: 20px;
+	padding: 5px;
+}
+
 .info {
 	margin: 0 auto;
 	width: 85%;
 	height: 100%;
 	min-height: 202px;
 	max-height: 202px;
+	float: left;
+	display: block;
+	position: relative;
+	border: white 1px solid;
+	box-sizing: border-box;  
+	overflow: hidden;
+	background: rgba(0,0,0,.2);
+	padding: 10px;
+}
+
+.info1 {
+	margin: 0 auto;
+	width: 85%;
+	height: 100%;
 	float: left;
 	display: block;
 	position: relative;
@@ -316,6 +374,19 @@ details {
 	padding: 10px;
 }
 
+.info iframe {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	min-height: 800px;
+	display: block;
+	position: relative;
+	margin: 10px auto;
+	border: solid white;
+	box-sizing: border-box; 
+	padding: 0;
+}
+
 .info .halfImg {
 	margin: 2px auto;
 	width: 32.66%;
@@ -331,6 +402,41 @@ details {
 	width: 100%;
 }
 
+.info .seperate {
+	margin: 0 auto;
+	width: 49.33%;
+	margin: .33%;
+}
+
+.info .seperate:hover {
+	border: white dashed;
+}
+
+.info .seperate:active {
+	width: 100%;
+}
+
+.social {
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 49.75%;
+	display: inline-block;
+	position: relative;
+	padding: 5px;
+	border: solid white 1px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Ubuntu, Arial, sans serif;
+	color: white;
+	text-align: center;
+}
+
+.social:hover {
+	cursor: pointer;
+	border: dotted white 1px;
+}
+
 .info video {
 	width: 100%;
 	display: block;
@@ -342,64 +448,6 @@ details {
 	box-sizing: border-box; 
 	padding: 0;
 	highlight: none;
-}
-
-#profile {
-	float: left;
-	display: inline-block;
-	position: relative;
-	margin: 0 auto;
-	width: 33%;
-}
-
-#profile img{
-	margin: 0 auto;
-	width: 100%;
-	box-sizing: border-box; 
-}
-
-#maincontent {
-	float: left;
-	display: inline-block;
-	position: relative;
-	margin: 0 auto;
-	width: 66%;
-	height: 428.63px;
-	border: white 1px solid;
-	border-bottom: 0;
-	box-sizing: border-box;
-	padding: 10px;
-	padding-bottom:0 ;
-}
-
-#maincontent1 {
-	float: left;
-	display: inline-block;
-	position: relative;
-	margin: 0 auto;
-	width: 66%;
-	height: 428.63px;
-	border: white 1px solid;
-	border-top: 0;
-	border-right: 0;
-	box-sizing: border-box;
-	padding: 10px;
-	padding-top:0;
-	padding-right:0;
-}
-
-#maincontent2 {
-	float: left;
-	display: inline-block;
-	position: relative;
-	margin: 0 auto;
-	width: 33%;
-	height: 428.63px;
-	border: white 1px solid;
-	border-left: 0;
-	box-sizing: border-box;
-	padding: 10px;
-	padding-left:0 ;
 }
 
 #panel {
@@ -525,6 +573,10 @@ video:focus {
 	position: relative;
 	border: 1px white solid;
 	box-sizing: border-box;  
+}
+
+#job, #skills, #edu {
+	min-height: 0px;
 }
 
 #content {
