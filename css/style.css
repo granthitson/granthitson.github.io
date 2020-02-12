@@ -306,7 +306,6 @@ pre {
 .info1 {
 	margin: 0 auto;
 	width: 85%;
-	height: 100%;
 	float: left;
 	display: block;
 	position: relative;
@@ -542,7 +541,6 @@ video:focus {
 }
 
 #fadein {
-	height: 100%;
 	display: block;
 	position: relative;
 	overflow-y: auto;
