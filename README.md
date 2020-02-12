@@ -1,1 +1,1 @@
-# https://granthitson.github.io/index.html
+# https://granthitson.github.io/
