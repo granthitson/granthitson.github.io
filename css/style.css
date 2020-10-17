@@ -301,6 +301,7 @@ pre {
 	overflow: hidden;
 	background: rgba(0,0,0,.2);
 	padding: 10px;
+	transition: max-height .5s ease-in-out;
 }
 
 .info1 {
@@ -348,7 +349,7 @@ pre {
 	text-align: left;
 	padding: 5px;
 	float: left;
-	
+	z
 }
 
 .info img {
